@@ -59,21 +59,3 @@ New-ADServiceAccount -Name $gmsaName -DNSHostName "$dcName.$((Get-ADDomain).DNSR
 # Add DC to group
 Add-ADGroupMember -Identity $groupName -Members $dcName
 
-## 3. Ubuntu Linux VM – Join to Active Directory
-
-This section covers how the Ubuntu Linux VM was joined to the Windows Active Directory (AD) domain.
-
-### Steps
-
-# Update and install required packages
-sudo apt update && sudo apt upgrade -y
-sudo apt install realmd sssd sssd-tools adcli krb5-user samba-common-bin -y
-
-# Discover the domain
-realm discover yourdomain.com
-
-# Join the domain
-sudo realm join --user=Administrator yourdomain.com
-
-# Verify domain membership
-realm list
