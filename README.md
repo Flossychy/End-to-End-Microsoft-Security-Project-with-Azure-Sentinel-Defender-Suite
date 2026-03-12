@@ -1,4 +1,4 @@
-# End-to-End-Microsoft-Security-Project-with-Azure-Sentinel-Defender-Suite
+# End to End Microsoft Security Project with Microsoft Defender XDR
 This project demonstrates a complete enterprise security monitoring and protection setup using Microsoft Security tools on Azure.
 
 ##  Overview  
@@ -11,7 +11,7 @@ This project integrates multiple Microsoft security solutions to simulate a **re
 - **Microsoft Defender for Cloud Apps** – app visibility, control, and shadow IT detection.  
 - **Microsoft Defender for Endpoint** – endpoint detection & response (EDR) for Windows and Linux machines.  
 - **Microsoft Defender for Identity** – Active Directory identity monitoring to detect compromised accounts and insider threats.  
-- **Azure Active Directory (Entra ID)** – cloud-based identity and access management for users and applications.  
+- **Microsoft Entra ID** – cloud-based identity and access management for users and applications.  
 - **On-Premises Domain Controller (Windows Server 2022)** – for Active Directory authentication and GPO management.  
 - **Ubuntu Linux VM** – integrated into the domain to test cross-platform security visibility.  
 ---
